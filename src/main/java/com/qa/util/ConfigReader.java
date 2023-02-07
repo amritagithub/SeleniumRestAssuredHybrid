@@ -22,6 +22,6 @@ public Properties init_prop()
 		e.printStackTrace();
 	}
 	return prop;
-	
+	// comment added
 }
 }
