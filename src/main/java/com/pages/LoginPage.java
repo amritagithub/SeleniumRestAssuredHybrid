@@ -31,6 +31,7 @@ public void enterUserName(String EmailId)
 }
 public void enterPassword(String pwd)
 {
+	
 	driver.findElement(password).sendKeys(pwd);
 	
 }
