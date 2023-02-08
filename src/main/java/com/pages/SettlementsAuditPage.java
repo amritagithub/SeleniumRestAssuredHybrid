@@ -21,6 +21,7 @@ public class SettlementsAuditPage {
 	By auditDropdown=By.xpath("//*[@class='ant-select-selection-item']");
 	By eventsDropdown=By.id("");
 	By auditIframe=By.id("extension-iframe");
+	By sideMenu=By.xpath("//*[contains(@class,'layout__sidebar__menu__item')]");
 	
 	//2. constructor for this class
 	
@@ -38,6 +39,12 @@ js.executeScript("window.scrollBy(0,350)", "");
 WebDriverWait w = new WebDriverWait(driver,100);
 // presenceOfElementLocated condition
 w.until(ExpectedConditions.presenceOfElementLocated (auditLink));
+List<WebElement> listOfSideMenuElements=driver.findElements(sideMenu);
+for(WebElement e: listOfSideMenuElements)
+{
+	System.out.println(e.getText());
+}
+
 	driver.findElement(auditLink).click();
 }
 public void clickOnEventsDropdown()
