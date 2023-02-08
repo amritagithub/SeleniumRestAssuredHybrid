@@ -15,8 +15,8 @@ public Properties init_prop()
 {
 	prop=new Properties();
 	try {
-		FileInputStream fis4=new FileInputStream("src/test/resources/Config/config.properties");
-		prop.load(fis4);
+		FileInputStream fis1212=new FileInputStream("src/test/resources/Config/config.properties");
+		prop.load(fis1212);
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
