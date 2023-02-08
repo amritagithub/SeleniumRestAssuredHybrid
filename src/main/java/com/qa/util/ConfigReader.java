@@ -15,13 +15,15 @@ public Properties init_prop()
 {
 	prop=new Properties();
 	try {
-		FileInputStream fis=new FileInputStream("src/test/resources/Config/config.properties");
-		prop.load(fis);
+		FileInputStream fis4=new FileInputStream("src/test/resources/Config/config.properties");
+		prop.load(fis4);
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	return prop;
+
+	
 	
 }
 }
